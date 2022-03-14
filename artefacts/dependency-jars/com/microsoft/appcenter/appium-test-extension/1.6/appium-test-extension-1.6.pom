@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <!-- This module was also published with a richer model, Gradle metadata,  -->
+  <!-- which should be used instead. Do not delete the following line which  -->
+  <!-- is to indicate to Gradle or any Gradle module metadata file consumer  -->
+  <!-- that they should prefer consuming it instead. -->
+  <!-- do_not_remove: published-with-gradle-metadata -->
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.microsoft.appcenter</groupId>
+  <artifactId>appium-test-extension</artifactId>
+  <version>1.6</version>
+  <name>Visual Studio App Center appium java test extensions</name>
+  <description>Extensions for producing nice looking test reports for appium tests in Visual Studio App Center</description>
+  <url>https://appcenter.ms</url>
+  <licenses>
+    <license>
+      <name>The MIT License (MIT)</name>
+      <url>https://opensource.org/licenses/MIT</url>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <name>Søren Skovsbøll</name>
+      <email>soskovsb@microsoft.com</email>
+      <organization>Microsoft</organization>
+      <organizationUrl>http://www.microsoft.com</organizationUrl>
+    </developer>
+    <developer>
+      <name>Simon Scharf</name>
+      <email>sisonder@microsoft.com</email>
+      <organization>Microsoft</organization>
+      <organizationUrl>http://www.microsoft.com</organizationUrl>
+    </developer>
+  </developers>
+  <scm>
+    <connection>https://github.com/microsoft/AppCenter-Test-Appium-Java-Extensions.git</connection>
+    <developerConnection>https://github.com/microsoft/AppCenter-Test-Appium-Java-Extensions</developerConnection>
+    <url>https://github.com/microsoft/AppCenter-Test-Appium-Java-Extensions</url>
+  </scm>
+  <dependencies>
+    <dependency>
+      <groupId>io.appium</groupId>
+      <artifactId>java-client</artifactId>
+      <version>6.0.0</version>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>net.sourceforge.streamsupport</groupId>
+      <artifactId>streamsupport</artifactId>
+      <version>1.5.1</version>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.javassist</groupId>
+      <artifactId>javassist</artifactId>
+      <version>3.20.0-GA</version>
+      <scope>runtime</scope>
+    </dependency>
+  </dependencies>
+</project>

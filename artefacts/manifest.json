@@ -1,0 +1,12 @@
+{
+ "schemaVersion": "1.0.0",
+ "files": [
+  "pom.xml",
+  "dependency-jars",
+  "test-classes"
+ ],
+ "testFramework": {
+  "name": "appium",
+  "data": {}
+ }
+}
