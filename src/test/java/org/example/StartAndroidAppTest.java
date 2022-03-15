@@ -10,6 +10,8 @@ import org.junit.Test;
 import org.junit.rules.TestWatcher;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -17,7 +19,7 @@ import java.net.URL;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
-public class StartIOSAppTest {
+public class StartAndroidAppTest {
 
     @Rule
     public TestWatcher watcher = Factory.createWatcher();
@@ -42,14 +44,15 @@ public class StartIOSAppTest {
     @Test
     public void canStartAppInTest() throws MalformedURLException, InterruptedException {
         driver = startApp();
-        Thread.sleep(10000);
+        driver.label("Starting App");
+
+        WebDriverWait wait = new WebDriverWait(driver, 10);
 
         WebElement testText = driver.findElementByAccessibilityId("testText");
+        wait.until(ExpectedConditions.visibilityOf(testText));
 
         assertEquals(testText.getText(), "testText");
         assertTrue(testText.isDisplayed());
-
-        Thread.sleep(10000);
     }
 
     @After
